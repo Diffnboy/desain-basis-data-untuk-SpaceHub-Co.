@@ -38,11 +38,14 @@ Repositori ini disusun sebagai pemenuhan **Tugas Besar Mata Kuliah Manajemen Dat
 ---
 
 ## Struktur Repositori
-- `Laporan_SpaceHub_Co_Kel.4.pdf/docx` : Laporan komprehensif Tugas Besar (Bab 1 - Bab 6).
-- `SpaceHub_Co_Kelompok4.pptx` : Salinan presentasi proyek.
-- `SpaceHub_DB_Full.sql` : Skrip master SQL (Gabungan DDL, DCL, & DML/Data Dummy).
-- `Analytical_Queries.sql` : Kumpulan 3 kueri manajerial tingkat lanjut (Bab 5).
-- `ERD_Diagram.png` : Gambar visualisasi relasi basis data (Crow's Foot Notation).
+Repositori ini murni berisi *source code* dan *script* basis data yang dipisahkan berdasarkan fungsinya:
+
+- `DDL.sql` : Skrip SQL untuk mendefinisikan struktur tabel, tipe data, dan konstrain (Data Definition Language).
+- `DCL.sql` : Skrip SQL untuk pengaturan keamanan dan manajemen hak akses pengguna (Data Control Language).
+- `dataDummy.sql` : Skrip SQL untuk mengisi 15-20 baris data awal / data tiruan guna keperluan pengujian.
+- `join.sql` : Kueri analisis 1 (Menghitung kalkulasi total hari lembur staf operasional lintas cabang).
+- `join2.sql` : Kueri analisis 2 (Mengidentifikasi cabang yang memiliki ketergantungan tinggi pada staf perbantuan).
+- `join3.sql` : Kueri analisis 3 (Membangun matriks rute mobilitas untuk posisi *Cleaning Service* antar cabang).
 
 ---
 
